@@ -12,8 +12,7 @@ export default class MovieService {
     },
     withCredentials: true,
   };
-  _apiKey = '41e75f40f80eee6c9bd1d10f253ce56b';
-
+ 
   async getAllMovies(pageNumber = 1) {
     try {
       const movieUrl = `${this._moviePopularUrl}/movie/popular?language=en-US&page=${pageNumber}`;
